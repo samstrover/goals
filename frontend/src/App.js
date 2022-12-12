@@ -1,10 +1,12 @@
-
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 import DashboardScreen from "./pages/DashboardScreen";
 import LoginScreen from "./pages/LoginScreen";
 import RegisterScreen from "./pages/RegisterScreen";
 import NoPageFoundScreen from "./pages/NoPageFoundScreen";
 import Header from "./components/Header";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             </Routes>
         </div>
     </Router>
+        <ToastContainer/>
     </>
   );
 }
